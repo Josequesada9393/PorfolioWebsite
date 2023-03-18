@@ -2,7 +2,7 @@ import React from 'react'
 import useMediaQuery from '../hooks/useMediaQuery'
 import { motion } from 'framer-motion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-
+import SocialMediaIcons from '../components/SocialMediaIcons'
 
 function Landing({ setSelectedPage }) {
 
@@ -19,7 +19,7 @@ function Landing({ setSelectedPage }) {
           >
             <img
               alt="profile"
-              className="hover:filter hover:grayscale-[70] transition duration-500 z-10 w-full max-w-[300px] md:max-w-[400px]"
+              className="hover:filter hover:grayscale-[70] rounded-t-[300px] transition duration-500 z-10 w-full max-w-[300px] md:max-w-[400px]"
               src="assets/profilePicJose.png"
             />
           </div>
@@ -78,17 +78,41 @@ function Landing({ setSelectedPage }) {
 
         >
 
-          <AnchorLink
-            className='bg-gradient-rainblue'
+       <AnchorLink
+            className='bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500'
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact Me
+          </AnchorLink>
+
+       <AnchorLink
+            className='rounded-r-sm bg-gradient-rainblue p-0.5 ml-3'
+            onClick={() => setSelectedPage("contact")}
+            href="#contact"
+          >
+            <div className='bg-deep-blue  hover:text-red
+            transition duration-500 w-full h-full flex items-center justify-center
+            font-playfair px-10'>let's talk</div>
         </AnchorLink>
 
         </motion.div>
 
 
+        <motion.div
+        className='flex mt-5 justify-center md:justify-start'
+            initial="hidden"
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            variant={{
+              hidden: { opacity: 0, x: -50 },
+              visible: {opacity: 1, x: 0}
+          }}
+        >
+
+          <SocialMediaIcons/>
+        </motion.div>
 
         </div>
 
