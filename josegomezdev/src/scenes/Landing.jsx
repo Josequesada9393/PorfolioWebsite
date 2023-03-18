@@ -14,8 +14,8 @@ function Landing({ setSelectedPage }) {
      {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-2 md:mt-2 flex justify-center md:order-2">
         {isAboveLarge ? (
-          <div className='relative z-0 ml-20 before:absolute before:top-40 before:-left-30 before:rounded-t-[900px]
-           before:rounded-b-[500px] before:rounded-r-[500px] before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-[400px] before:border-2 before:border-blue before:z-[-1]'
+          <div className='relative z-0  ml-20 before:absolute before:top-40 before:-left-30 before:rounded-t-[900px]
+           before:rounded-b-[500px] before:rounded-r-[600px] before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-[400px] before:border-2 before:border-blue before:z-[-1]'
           >
             <img
               alt="profile"
