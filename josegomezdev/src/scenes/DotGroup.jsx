@@ -38,8 +38,6 @@ function DotGroup({ selectedPage, setSelectedPage }) {
       onClick={() => setSelectedPage('something')}
     />
 
-
-
     </div>
   )
 }
