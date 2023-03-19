@@ -70,7 +70,7 @@ function Contact() {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/c28b698a66ebd4a911357ed92e3dd6cd"
+            action="https://formsubmit.co/josequesada9393@gmail.com"
             method="POST"
           >
             <input
