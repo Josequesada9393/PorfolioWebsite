@@ -69,20 +69,11 @@ function Projects() {
           variants={container}
         >
 
-                {/*GP-TA is an AI Teaching Assistant to mark grades automatically. It aims at reducing foreing language teachers workload while still providing helpful and accurate feedback.
 
-It allows users to create and log onto their profile.
-Users can access a classroom dashboard where they can create folders for students and assing multiple assignments to each student.
-Student's essays may be uploaded on a doc file, an image file or simply copy and paste. Then, let the AI do its magic and return feedback.
-Feedback is returned in three different steps:
-Step 1: It returns the text submitted by the student highlighting grammar and spelling mistakes.
-Step 2: It provides a list with each mistake and specific feedback about it.
-Step 3: It suggests several areas of improvement to expand student's progress based on the text.
-It includes Stripe payments*/}
 
-          <div className="">
+          <div className="h-[400px] md:h-full">
             <h3 className="ml-5 font-bold h-[5%]">GPTA</h3>
-              <img className="rounded-xl h-[80%] mb-6 p-2" src={GPTA} alt="" />
+              <img className="rounded-xl h-[80%]  mb-6 p-2" src={GPTA} alt="" />
               </div>
 
           <div className="">
