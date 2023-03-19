@@ -11,7 +11,6 @@ import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 
 function App() {
-
   const [selectedPage, setSelectedPage] = useState('home')
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -46,9 +45,7 @@ function App() {
 
       </div>
       <LineGradient />
-
-
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto  md:h-full">
         <MySkills />
       </div>
 

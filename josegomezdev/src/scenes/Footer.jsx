@@ -1,22 +1,21 @@
-import React from 'react'
-import SocialMediaIcons from '../components/SocialMediaIcons'
+import SocialMediaIcons from "../components/SocialMediaIcons";
 
-function Footer() {
+const Footer = () => {
   return (
-<footer className="h-64 bg-red pt-10">
-      <div className="w-10/12 mx-auto">
-        <SocialMediaIcons />
-        <div className="md:flex justify-center md:justify-between text-center ">
-          <p className="font-playfair font-semibold text-2xl text-yellow">
-            JOSE GOMEZ
+    <footer className="h-20 pt-10">
+      <div className="w-full bg-red mx-auto">
+        <SocialMediaIcons mx={'mx-10 pt-2'}/>
+        <div className="md:flex justify-center mx-10  md:justify-between text-center ">
+          <p className="font-playfair font-semibold text-xl  text-yellow">
+           Jose Gomez
           </p>
           <p className="font-playfair text-md text-yellow">
-            ©2023 JoseGomezDev. All Rights Reserved.
+            ©2023 JG. All Rights Reserved.
           </p>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -25,12 +25,12 @@ function Navbar({isTopOfPage, selectedPage, setSelectedPage }) {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)")
 
-  const navbarBackground = isTopOfPage ? "" : 'bg-red'
+  const navbarBackground = isTopOfPage ? "" : ' bg-slate-700'
 
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6 bg-slate-400` }>
+    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6` }>
       <div className='flex items-center justify-between mx-auto w-5/6'>
-        <h4 className='font-playfair text-3xl font-bold'>JoseGomezDev</h4>
+        <h4 className='font-playfair text-3xl font-bold'></h4>
 
         {/*desktop nav*/}
 
@@ -58,7 +58,7 @@ function Navbar({isTopOfPage, selectedPage, setSelectedPage }) {
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
                 />
-               
+
            </div>
 
      )   :

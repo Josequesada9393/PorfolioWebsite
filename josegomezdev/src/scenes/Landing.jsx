@@ -8,7 +8,7 @@ function Landing({ setSelectedPage }) {
 
   const isAboveLarge = useMediaQuery('(min-width: 1060px)');
   return (
-    <section id='home'   className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+    <section id='home' className="md:flex md:justify-between md:items-center  gap-16 md:h-full py-10"
 >
 
      {/* IMAGE SECTION */}
@@ -59,7 +59,20 @@ function Landing({ setSelectedPage }) {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Full Stack Developer with a background in education and experience in cutting edge technologies
+
+
+            <span className='text-md font-bold text-yellow transition duration-150'>Full Stack Developer</span> and former foreign language teacher,
+            experienced with <span className='text-md font-bold text-yellow transition duration-150'> Javascript</span> technologies.
+            I bring a unique blend of technical
+            expertise and <span className='text-md font-bold text-yellow transition duration-150'> communication </span>
+            skills to create impactful and user-friendly wespan applications.
+            Just as I would do with my former students, I enjoy breaking down
+            <span className='text-md font-bold text-yellow transition duration-150'> complex problems
+            </span> into <span className='text-md font-bold text-yellow'>readable code</span> for my team and
+            intuitive results for clients.
+            <br />
+            <br />
+            Originally from rural Spain, being outdoors is where I feel best so you won't probably catch me at home during the weekends.
           </p>
 
         </motion.div>
@@ -75,7 +88,6 @@ function Landing({ setSelectedPage }) {
               hidden: { opacity: 0, x: -50 },
               visible: {opacity: 1, x: 0}
             }}
-
         >
 
        <AnchorLink

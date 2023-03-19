@@ -1,5 +1,15 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import GPTA from '../experienceImages/GPTAImages.png'
+import NoWaste from '../experienceImages/noWasteImages.png'
+import ShopMe from '../experienceImages/ShopMeImages.png'
+import GPTADescription from '../experienceImages/GPTADescription.png'
+import GPTATechStack from '../experienceImages/GPTATechStack.png'
+import NoWasteDescription from '../experienceImages/NowasteDescription.png'
+import shopMeDescription from '../experienceImages/shopMeDescription.png'
+import ShopMeTech from '../experienceImages/ShopMeTech.png'
+import NoWasteTech from '../experienceImages/NoWasteTech.png'
+
 
 import React from 'react'
 
@@ -16,28 +26,12 @@ const projectVariant = {
 }
 
 //format to reference image
-const Project = ({ title }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90
-  transition duration-500 bg-grey
-   z-30 flex flex-col justify-center items-center
-   text-center p-16 text-deep-blue`
-  const projectTitle = title.split(" ").join("-").toLowerCase()
-  console.log(projectTitle)
-  return (
-    <motion.div className="relative" variants={projectVariant}>
-      <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">this is the description of my project</p>
-      </div>
-      <img src={`../assets/${projectTitle}.png`} alt={projectTitle} />
-    </motion.div>
-  )
-}
+
 
 function Projects() {
 
   return (
-    <section id="projects" className="pt-48 pb-48">
+    <section id="projects" className="pt-22 pb-8">
       {/*headings*/}
 
         <motion.div
@@ -53,7 +47,7 @@ function Projects() {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl ">
-          <span className="text-red">PRO</span>JECTS
+          EXPERIENCE
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
@@ -61,13 +55,11 @@ function Projects() {
           </div>
 
           <p className="mt-10 mb-10">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
         </p>
 
       </motion.div>
       {/*projects*/}
-      <div className="flex justify-center">
+      <div className="flex justify-center grid-cols-3">
 
          <motion.div
           className="sm:grid sm:grid-cols-3"
@@ -77,22 +69,55 @@ function Projects() {
           variants={container}
         >
 
-                {/*first row*/}
+                {/*GP-TA is an AI Teaching Assistant to mark grades automatically. It aims at reducing foreing language teachers workload while still providing helpful and accurate feedback.
 
-          <div className="flex justify-center text-center items-center p-10 bg-red
-          max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
-            User interfaces expert
+It allows users to create and log onto their profile.
+Users can access a classroom dashboard where they can create folders for students and assing multiple assignments to each student.
+Student's essays may be uploaded on a doc file, an image file or simply copy and paste. Then, let the AI do its magic and return feedback.
+Feedback is returned in three different steps:
+Step 1: It returns the text submitted by the student highlighting grammar and spelling mistakes.
+Step 2: It provides a list with each mistake and specific feedback about it.
+Step 3: It suggests several areas of improvement to expand student's progress based on the text.
+It includes Stripe payments*/}
+
+          <div className="">
+            <h3 className="ml-5 font-bold h-[5%]">GPTA</h3>
+              <img className="rounded-xl h-[80%] mb-6 p-2" src={GPTA} alt="" />
+              </div>
+
+          <div className="">
+              <img className="rounded-xl mb-6 p-2" src={GPTADescription} alt="" />
+              </div>
+          <div className="">
+              <img className="rounded-xl  mb-6 p-2" src={GPTATechStack} alt="" />
+              </div>
+
+
+
+          <div className="">
+            <h3 className="ml-5 font-bold h-[5%]">ShopMe</h3>
+              <img className="rounded-xl h-[80%] mb-6 p-2" src={ShopMe} alt="" />
+              </div>
+
+          <div className="">
+              <img className="rounded-xl mb-6 p-2" src={shopMeDescription} alt="" />
+              </div>
+          <div className="">
+              <img className="rounded-xl  mb-6 p-2" src={ShopMeTech} alt="" />
           </div>
-          <Project title='Project 1'/>
-          <Project title='Project 2' />
-          <Project title='Project 3'/>
-          <Project title='Project 4'/>
-          <Project title='Project 5'/>
-          <Project title='Project 6'/>
-          <Project title='Project 7' />
-          <div className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px]
-          max-h-[400px]
-          text-2xl font-playfair font-semibold">Smooth User Experience</div>
+
+           <div className="">
+            <h3 className="ml-5 font-bold h-[5%]">NoWaste</h3>
+              <img className="rounded-xl h-[80%] mb-6 p-2" src={NoWaste} alt="" />
+              </div>
+
+          <div className="">
+              <img className="rounded-xl mb-6 p-2" src={NoWasteDescription} alt="" />
+              </div>
+          <div className="">
+              <img className="rounded-xl  mb-6 p-2" src={NoWasteTech} alt="" />
+              </div>
+
         </motion.div>
       </div>
 
