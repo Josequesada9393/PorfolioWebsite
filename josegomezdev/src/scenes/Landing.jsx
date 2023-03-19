@@ -28,7 +28,7 @@ function Landing({ setSelectedPage }) {
           <img
             alt="profile"
             className="z-10 w-full max-w-[400px] md:max-w-[600px] hover:grayscale-[70] transition duration-500"
-            src="assets/profilePicJose.png"
+            src={ProfilePic}
           />
         )}
 
