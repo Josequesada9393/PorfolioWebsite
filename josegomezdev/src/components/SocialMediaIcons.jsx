@@ -1,4 +1,5 @@
 import React from 'react'
+import githubIcon from '../experienceImages/GitHub-Mark.png'
 
 function SocialMediaIcons({mx}) {
   return (
@@ -17,7 +18,7 @@ function SocialMediaIcons({mx}) {
         target="_blank"
         rel="noreferrer"
       >
-        <img className="rounded  opacity-95 " alt="twitter-link" src="../assets/github-mark.png" />
+        <img className="rounded  opacity-95 " alt="twitter-link" src={githubIcon} />
       </a>
     </div>
   )

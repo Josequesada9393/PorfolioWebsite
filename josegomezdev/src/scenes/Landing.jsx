@@ -3,6 +3,7 @@ import useMediaQuery from '../hooks/useMediaQuery'
 import { motion } from 'framer-motion'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import SocialMediaIcons from '../components/SocialMediaIcons'
+import ProfilePic from '../experienceImages/ProfilePicJose.png'
 
 function Landing({ setSelectedPage }) {
 
@@ -20,7 +21,7 @@ function Landing({ setSelectedPage }) {
             <img
               alt="profile"
               className="hover:filter hover:grayscale-[70] rounded-t-[300px] transition duration-500 z-10 w-full max-w-[300px] md:max-w-[400px]"
-              src="assets/profilePicJose.png"
+              src={ProfilePic}
             />
           </div>
         ) : (
