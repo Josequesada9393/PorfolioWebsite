@@ -92,7 +92,7 @@ function Navbar({isTopOfPage, selectedPage, setSelectedPage }) {
           setSelectedPage={setSelectedPage}
                 />
                 <Link
-          page="Experience"
+          page="Projects"
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
                 />
@@ -101,11 +101,7 @@ function Navbar({isTopOfPage, selectedPage, setSelectedPage }) {
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
                 />
-                <Link
-          page="something"
-          selectedPage={selectedPage}
-          setSelectedPage={setSelectedPage}
-           />
+                
             </div>
            </div>
 
