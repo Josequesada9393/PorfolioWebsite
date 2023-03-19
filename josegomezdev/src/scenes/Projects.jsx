@@ -85,7 +85,7 @@ function Projects() {
 
 
 
-          <div className="">
+          <div className="h-[400px] md:h-full">
             <h3 className="ml-5 font-bold h-[5%]">ShopMe</h3>
               <img className="rounded-xl h-[80%] mb-6 p-2" src={ShopMe} alt="" />
               </div>
@@ -97,7 +97,7 @@ function Projects() {
               <img className="rounded-xl  mb-6 p-2" src={ShopMeTech} alt="" />
           </div>
 
-           <div className="">
+           <div className="h-[400px] md:h-full">
             <h3 className="ml-5 font-bold h-[5%]">NoWaste</h3>
               <img className="rounded-xl h-[80%] mb-6 p-2" src={NoWaste} alt="" />
               </div>
