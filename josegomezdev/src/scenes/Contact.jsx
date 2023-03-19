@@ -53,7 +53,7 @@ function Contact() {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/contact-image.jpeg" alt="contact" />
+          <img className="opacity-90 rounded" src="../assets/contactMe.jpg" alt="contact" />
         </motion.div>
 
         <motion.div

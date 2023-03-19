@@ -36,12 +36,12 @@ function MySkills() {
             >
               <img
                 alt="skills"
-                className="z-10"
-                src="assets/skills-image.png"
+                className="z-10 md:h-32 md:w-[700px] opacity-70 rounded"
+                src="assets/bg-skills.png"
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="assets/skills-image.png" />
+            <img alt="skills" className="z-10 h-32 w-[500px] rounded opacity-70" src="assets/bg-skills.png" />
           )}
         </div>
       </div>
