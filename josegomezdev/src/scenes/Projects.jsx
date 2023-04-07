@@ -59,7 +59,7 @@ function Projects() {
         </p>
 
       </motion.div>
-      {/*projects*/}
+      {/*Experience*/}
       <div className="flex justify-center grid-cols-3">
 
          <motion.div
@@ -70,28 +70,21 @@ function Projects() {
           variants={container}
         >
 
-
-
-          <div className="relative h-[400px] md:h-full">
-            <h3 className="ml-5 font-bold h-[5%]">GPTA</h3>
-            <img className="rounded-xl h-[80%]  mb-6 p-2" src={GPTA} alt="" />
-            <a className="absolute opacity-60  top-[-14px] right-16 w-[10%] duration-500 hover:w-[20%] hover:opacity-100" href="https://github.com/Kennyk22/GP-TA"><img className=' rounded-full' src={GithubButton} alt="" /></a>
+          <div className="relative md:h-full flex justify-center">
+            <img className="rounded-xl mb-6 p-2" src={GPTA} alt="" />
+            <a className="absolute w-[10%] duration-500 hover:w-[20%] hover:opacity-100" href="https://github.com/Kennyk22/GP-TA"><img className=' rounded-full' src={GithubButton} alt="" /></a>
           </div>
 
-          <div className="">
+          <div>
               <img className="rounded-xl mb-6 p-2" src={GPTADescription} alt="" />
-              </div>
-          <div className="">
+          </div>
+          <div>
               <img className="rounded-xl  mb-6 p-2" src={GPTATechStack} alt="" />
-              </div>
+          </div>
 
-
-
-          <div className="relative h-[400px] md:h-full">
-            <h3 className="ml-5 font-bold h-[5%]">ShopMe</h3>
-            <img className="rounded-xl h-[80%] mb-6 p-2" src={ShopMe} alt="" />
-            <a className="absolute opacity-60 top-[-14px] right-16 w-[10%] duration-500 hover:w-[20%] hover:opacity-100" href="https://github.com/Josequesada9393/shopMe"><img className=' rounded-full' src={GithubButton} alt="" /></a>
-
+          <div className="relative md:h-full flex justify-center">
+            <img className="rounded-xl mb-6 p-2" src={ShopMe} alt="" />
+            <a className="absolute w-[10%] duration-500 hover:w-[20%] hover:opacity-100" href="https://github.com/Josequesada9393/shopMe"><img className='rounded-full' src={GithubButton} alt="" /></a>
               </div>
 
           <div className="">
@@ -101,10 +94,9 @@ function Projects() {
               <img className="rounded-xl  mb-6 p-2" src={ShopMeTech} alt="" />
           </div>
 
-           <div className="relative h-[400px] md:h-full">
-            <h3 className="ml-5 font-bold h-[5%]">NoWaste</h3>
-            <img className="rounded-xl h-[80%] mb-6 p-2" src={NoWaste} alt="" />
-            <a className="absolute opacity-60 top-[-14px] right-16 w-[10%] duration-500 hover:w-[20%] hover:opacity-100" href="https://github.com/Josequesada9393/NoWaste"><img className=' rounded-full' src={GithubButton} alt="" /></a>
+           <div className="relative flex justify-center md:h-full">
+            <img className="rounded-xl mb-6 p-2" src={NoWaste} alt="" />
+            <a className="absolute w-[10%] duration-500 hover:w-[20%] hover:opacity-100" href="https://github.com/Josequesada9393/NoWaste"><img className=' rounded-full' src={GithubButton} alt="" /></a>
 
               </div>
 
