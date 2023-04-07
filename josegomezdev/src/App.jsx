@@ -45,10 +45,13 @@ function App() {
 
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto  md:h-full"
+      <motion.div className="w-5/6 mx-auto  md:h-full"
+        amount="all"
+        onViewportEnter={
+          () => setSelectedPage("skills")}
       >
         <MySkills />
-      </div>
+      </motion.div>
 
       <LineGradient />
       <div className="w-5/6 mx-auto">
