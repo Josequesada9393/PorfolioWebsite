@@ -39,7 +39,7 @@ function Projects() {
           className="md:w-2/5 mx-auto text-center"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5 }}
           variants={{
             hidden: { opacity: 0,  y: -50 },
@@ -66,7 +66,7 @@ function Projects() {
           className="sm:grid sm:grid-cols-3"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }}
           variants={{
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
